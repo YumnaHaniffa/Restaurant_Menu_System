@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width,  initial-scale=1.0">
+			<title>Va Tang Order Online</title>
+			<link rel="stylesheet" type="text/css" href="style.css">
+		<head>
+		<body>
+			<header>
+				<div class="top-bar">
+					<div class="content-bar">
+						<div class="leftSection">
+							<div class="logo1">
+								<img src="../images/logo.png" alt="Va Tang Logo" class="Logo1">
+							</div>
+						</div>
+						<div class="rightSection">
+							<ul>
+								<li>
+									<button class="cart-button">
+										<div class="cart">
+											<img src="../images/shopping-bags.png" alt="User Cart" class="shopping-cart-icon">
+											<span>0</span>
+										</div>
+									</button>
+								</li>	
+								<li>
+									<button class="account-button">
+										<div class="account">
+											<img src="../images/account.png" alt="User-Account" class="user-account">
+										</div>
+									</button>
+								</li>
+												
+							</ul>	
+							
+						</div>
+					</div>
+				</div>
+			</header>	
+				<div class="banner">	
+					<div class="menu-header1">
+						<div class="header-banner">
+							<div class="header-image">
+								<img src="../images/banner1.jpg" alt="banner" class="banner-image" >
+							</div>
+						</div>	
+					</div>	
+				</div>	
+					
+				<div class="contentWrapper">
+					<div class="sub-content">
+						<h3 class="Resturant-heading">To Vang Restuarant</h3>
+						<h4 class="Resturant-address">12152 Fairfax Towne Center Fairfax VA, 22033</h4>
+					</div>	
+					<div class="order-information">
+						<div class="controllerContainer">
+							<button class="button-controller">
+								<div class="controllerContainer-det">
+									<div class="pick">Pickup</div><span class="separator">|</span>
+									<div class="scheduleTime">Schedule your order</div>
+								</div>
+							</button>		
+						</div>
+					</div>
+				</div>
+
+
+
+				<div class="container"> 
+					<nav class="navbar">
+						<ul class ="nav-links">
+							<li class = "nav-link items">
+								<a href="#" class="nav-link" data-filter-type="all" data-filter="all">All</a> 
+									<span class ="material-icons dropdown-icon">
+									
+
+									</span>
+								
+							</li>
+
+							<li class = "nav-link items">
+								<a href="#" class="nav-category" data-category="food">Food Type</a> 
+									<span class ="material-icons dropdown-icon">
+									
+
+									</span>
+								<ul class ="drop-down">
+									<li><a href="#" class = "nav-link" data-filter-type="category" data-filter="appetizers">APPETIZERS</a></li>
+									<li><a href="#" class = "nav-link" data-filter-type="category"  data-filter="mains">MAINS</a></li>
+									<li><a href="#" class = "nav-link" data-filter-type="category"  data-filter="all">All</a></li>
+
+								</ul>
+							</li>
+
+							<li class = "nav-link items">
+								<a href="#" class="nav-category" data-category="drinks and desserts">Drinks & Desserts</a>
+									<span class ="material-icons dropdown-icon">
+										
+
+									</span>
+								<ul class ="drop-down">
+									<li><a href="#" class = "nav-link" data-filter-type="category" data-filter="drinks">DRINKS</a></li>
+									<li><a href="#" class = "nav-link" data-filter-type="category"  data-filter="desserts">DESSERTS</a></li>
+									<li><a href="#" class = "nav-link" data-filter-type="category"  data-filter="all">All</a></li>
+								</ul> 
+							</li>
+							<li class = "nav-link items">
+								<a href="#" class="nav-category" data-category="price">Price</a> 
+									<span class ="material-icons dropdown-icon">
+										
+
+									</span>
+								<ul class ="drop-down">
+									<li><a href="#" class = "nav-link" data-filter-type="price" data-filter="under-5">Under $5</a></li>
+									<li><a href="#" class = "nav-link" data-filter-type="price"  data-filter="5-10">$5 - $10</a></li>
+									<li><a href="#" class = "nav-link" data-filter-type="price"  data-filter="10-15">$10 - $15</a></li>
+									<li><a href="#" class = "nav-link" data-filter-type="price"  data-filter="15+">$15+</a></li>
+									<li><a href="#" class = "nav-link" data-filter-type="price"  data-filter="all">All</a></li>
+								</ul> 
+							</li>
+							<li class = "nav-link items">
+								<a href="#" class="nav-category" data-category="Preference">Meal Preference</a>
+									<span class ="material-icons dropdown-icon">
+										
+
+									</span> 
+								<ul class ="drop-down">
+									<li><a href="#" class = "nav-link" data-filter-type="preference"  data-filter="veg">Veg</a></li>
+									<li><a href="#" class = "nav-link" data-filter-type="preference"  data-filter="non-veg">Non-Veg</a></li>
+									<li><a href="#" class = "nav-link" data-filter-type="preference"  data-filter="all">All</a></li>									
+								</ul> 
+							</li>							
+						</ul>
+					</nav>
+				</div>		
+				
+				<div class="main-menue-section">
+				
+					<section class="Appetizers-box">
+						<h2 class="category-title">Appetizers</h2>
+						<div  id = "appetizers-items" class="item-boxes"></div>
+						
+							
+					</section>
+						
+
+					<section class="Mains-box">
+						<h2  class="category-title">Mains</h2>
+						<div  id ="mains-items" class="item-boxes"></div>
+						
+							
+					</section>
+					
+					
+					
+					<section class="Drinks-box">
+						<h2  class="category-title">Drinks</h2>
+						<div  id="drinks-items" class="item-boxes"></div>
+							
+					</section>
+					
+								
+					
+					<section class="Desserts-box">
+						<h2  class="category-title">Dessert</h2>
+						<div  id="desserts-items" class="item-boxes"></div>					
+							
+					</section>
+				</div>
+				
+					
+                <div class="cart-area">
+                    <div id="cart-popup">
+                        <h2>Your Cart</h1>
+                        <div id="cart-items"></div>
+                        <div id="cart-total">Total:$0.00</div>
+                        <div id ="cart-summary">
+                            <button id="checkout-button">Checkout</button>
+                            <button id="close-cart">Close</button>
+                        </div>	
+                    </div>
+                </div>		
+					
+					
+			
+			<footer>
+				<div class="Footer-grid">
+					<div class="overlay"></div> 
+					<div class="footer-content">
+						<div class="left-footer">
+							<div class="restaurant-information">
+								<h3>To Wang Location and Ordering Hours</h3>
+								<ul>
+									<li>Phone number : (703) 395-7390</li>
+									<li>Location : 12152 Fairfax Towne Center Fairfax VA, 22033</li>
+									<br>
+									<li><strong>Operating Hours</strong></li>
+									<li>Mondays - Thursdays 11 AM - 8 PM </li>
+									<li>Fridays - Sundays 11 AM - 9 PM </li>
+									<li>Closing every Tuesday</li>
+									<br>
+									<li><a href="#order-online">Order Online</a></li>
+									<br>
+								</ul>
+							</div>
+							<div class="footer-social-media">
+								<ul>
+									<li><a href="#"><img src="../images/facebook.png" alt="facebook-icon" class="facebook"></a></li>
+									<li><a href="#"><img src="../images/instagram.png" alt="instagram-icon" class="instagram"></a></li>
+								</ul>
+							</div>
+						</div>	
+						
+						<div class="center-bottom">
+							<div class="copyright">
+								<p>&copy; 2025 To Wang. All rights reserved.</p>
+							</div>
+						</div>	
+						
+										
+						<div class="right-footer">
+							<img class="logo2" src="../images/logo.png" alt="Restaurant Logo">	
+						</div>
+					</div>	
+				</div>	
+								
+			</footer>
+		<script src="orderForm.js"></script>	
+
+		</body>
+	
+	
+	</html>
+	
