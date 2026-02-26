@@ -1,0 +1,191 @@
+ <!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width,  initial-scale=1.0">
+			<title>Va Tang Order Online</title>
+			<link rel="stylesheet" type="text/css" href="style.css">
+
+		</head>
+		<body>
+			<header>
+				<div class="form-top-bar">
+					<div class="upper-bar">
+						<div class="logo-top">
+								<img src="../images/logo.png" alt="Va Tang Logo" class="log">
+                        </div>
+					</div>
+                  
+                </div>  
+                <div class="upper-bar2">
+                    <div class="bar-content">
+                        <div class = "lock-icon">
+                            <img src="../images/lock.png" alt="lock-icon" class ="lock">
+                        </div>
+                        <div class="checkout-heading">
+                            <h2>Secure Checkout</h2>
+                        </div>
+                        
+                    </div>
+                </div>  
+						
+			</header>
+                           
+                <div class="form-section">
+                    <h3>Order Summary</h3>
+                    <div id ="orderSummary">
+
+                    </div>	
+                    <form onsubmit="return validateForm()" id="payment-form"></form>  
+                        <fieldset>
+                            <legend>Customer Details</legend>
+                            <div class ="cutom-det">
+                                <div class ="form-row">
+                                    <label for = "title">Title</label>
+                                    <select id="title">
+                                        <option value= "">Select</option>
+                                        <option vlaue ="mr">Mr.</option>
+                                        <option value ="ms">Ms.</option>
+                                    </select>
+                                </div>
+                                <div class ="form-row">
+                                    <label for = "firstName">First Name</label>
+                                    <input type="text" id ="firstName" placeholder="First name">
+                                </div>
+                                <div class ="form-row">
+                                    <label for = "LastName">Last Name</label>
+                                    <input type="text" id ="lastName" placeholder = "Last name">
+                                </div>
+                                <div class ="form-row">
+                                    <label for = "code">Code</label>
+                                    <div class ="code-input">
+                                        <input type="text" id ="code" placeholder = "+94">
+                                    </div>    
+                                </div>
+                                <div class ="form-row">
+                                    <label for = "mobile">Modible *</label>
+                                    <input type="tel" id ="mobile" placeholder = "77XXXXXXX">
+                                </div>   
+                                <div class ="form-row">
+                                    <label for = "email">Email Address</label>
+                                    <input type="email" id ="email" placeholder = "mail@example.com">
+                                </div>    
+                            </div>
+                        </fieldset>   
+                        
+                        <fieldset>
+                            <legend>Where should we deliver it?</legend>
+                            <div class ="deliver-det">
+                                
+                                <div class ="form-row">
+                                    <label for = "address">Address Details</label>
+                                    <input type="text" id ="address" placeholder="House Number or Name" maxlength="200" size =47>
+                                </div>
+                                
+                            </div>
+                        </fieldset>  
+
+
+                        <fieldset class="paymentBar" >
+                            <legend>Payment Details</legend>
+                            <div class ="pay-det">
+                                <div class ="form-row">
+                                    <h3>Card Type</h3>
+                                    <div class ="choice">
+                                        <input type ="radio" id ="creditCard" name=" choice">
+                                        <label for = "creditCard">Credit Card</label><br>
+                                        <input type ="radio" id ="debitCard"  name=" choice">
+                                        <label for = "debit card">Debit Card</label><br>
+                                    </div>    
+                                    <div id ="choiceError" class ="error-message"></div>
+                                    
+                                </div>
+                                <div class ="form-row">
+                                    <h3>Card Type</h3>
+                                    <div class ="choice1">                            
+                                    
+                                        <input type ="radio" id ="visa" name=" choice">
+                                        <label for = "visa">Visa</label><br>
+                                        <input type ="radio" id ="mastercard" name=" choice">
+                                        <label for = "mastercard">Mastercard</label><br>
+                                    </div>
+                                    <div id ="choiceError" class ="error-message"></div>
+                                </div>
+
+                                <div class ="form-row">
+                                    <label for = "cardNumber">Card Number</label><br>
+                                    <input type="text" id ="cardNumber">
+                                </div>
+                                
+                                <div class ="form-row">
+                                    <label for = "expairationMonth">Expiration Month</label><br>
+                                    <select id="expairationMonth">
+                                        <option value= "">Month</option>
+                                        <option vlaue ="01">01</option>
+                                        <option value ="02">02</option>
+                                        <option vlaue ="03">03</option>
+                                        <option value ="04">04</option>
+                                        <option vlaue ="05">05</option>
+                                        <option value ="06">06</option>
+                                        <option value ="07">07</option>
+                                        <option vlaue ="08">08</option>
+                                        <option vlaue ="09">09</option>
+                                        <option vlaue ="10">10</option>
+                                        <option vlaue ="11">11</option>
+                                        <option vlaue ="12">12</option>
+                                    </select>
+                                </div>
+
+                                <div class ="form-row">
+                                    <label for = "expairationYear">Expiration Year</label><br>
+                                    <select id="expairationYears">
+                                        <option value= "">Year</option>
+                                        <option vlaue ="01">2025</option>
+                                        <option value ="02">2026</option>
+                                        <option vlaue ="03">2027</option>
+                                        <option value ="04">2028</option>
+                                        <option vlaue ="05">2029</option>
+                                        <option value ="06">2030</option>
+                                        <option value ="07">2031</option>
+                                        <option vlaue ="08">2032</option>
+                                        <option vlaue ="09">2033</option>
+                                        <option vlaue ="10">2034</option>
+                                        <option vlaue ="11">2035</option>
+                                        <option vlaue ="12">2036</option>
+                                    </select>
+                                </div>
+
+                                <div class ="form-row">
+                                    <label for = "pin">CVN</label><br>
+                                    <input type="text" id ="pin">
+                                </div>
+                                <div class ="confirmButton">
+                                    <div class =con-button1>
+                                        <button>Cancel</button>
+                                    </div>
+                                    <div class="con-button2">
+                                        <button type="submit" class="pay">Pay</button>
+                                    </div>
+                                    
+                                </div>
+
+                                
+                            </div>
+                        </fieldset> 
+                    </form>
+
+                
+                  
+
+
+            </div>    
+
+				
+			
+		<script src="orderSummary.js"></script>	
+
+		</body>
+	
+	
+	</html>
+	
