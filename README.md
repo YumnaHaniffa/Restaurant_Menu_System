@@ -8,7 +8,7 @@
 ![XML](https://img.shields.io/badge/XML-FF6600?logo=xml&logoColor=white)
 
 
-![Homepage](./images/logo.png)
+![Homepage](./images/home-page.PNG)
 
 ---
 ## 📋 Project Overview
