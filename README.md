@@ -42,6 +42,5 @@ Designed with strong focus on **User Experience (UX/UI)**, accessibility, and cl
 | **CSS3**       | Modern styling, Flexbox, responsive design, hover effects |
 | **JavaScript (ES6)** | Dynamic filtering, cart system, form validation, XML parsing |
 | **XML**        | Stores menu data (title, price, description, image, preference) |
-
 ---
 
